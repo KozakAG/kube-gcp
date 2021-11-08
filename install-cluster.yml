@@ -102,6 +102,7 @@
        dest: /home/debian/.kube/config
        remote_src: yes
        owner: debian
+       mode: 0400
 
    - name: install Pod network
      become: yes

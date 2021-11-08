@@ -1,0 +1,4 @@
+https://hub.docker.com/r/satken2/ansible
+
+
+alias ansible-playbook=" docker run -v /home/debian/.ssh:/root/.ssh:ro -v /home/debian/kube-gcp:/work:ro -w /work --rm satken2/ansible:3.3.0 ansible-playbook"
