@@ -1,1 +1,12 @@
+name: Test
 
+on:
+  push:
+    branches:
+      - master
+jobs:
+  testing:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Print Hello
+         run: echo "HELLO !!!"
